@@ -317,18 +317,18 @@
 
 
   "map": [{
-    "name": "Monona Terrace Convention Center",
-    "lat": 43.071584,
-    "lng": -89.380120,
+    "name": "Tent City ATL",
+    "lat": 33.736743,
+    "lng": -84.388144,
     "center": true
   }, {
-    "name": "Ionic HQ",
-    "lat": 43.074395,
-    "lng": -89.381056
+    "name": "PRC",
+    "lat": 33.726426,
+    "lng": -84.390919
   }, {
-    "name": "Afterparty - Brocach Irish Pub",
-    "lat": 43.07336,
-    "lng": -89.38335
+    "name": "Bullpen Rib House (Parking)",
+    "lat": 33.734967,
+    "lng": -84.391095
   }]
 
 }
