@@ -28,4 +28,5 @@ export class AsksDataService {
     this.storage.set('asks', newData);
   }
 
+
 }

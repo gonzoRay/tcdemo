@@ -30,7 +30,7 @@ import {ConferenceData} from '../providers/conference-data';
 import {UserData} from '../providers/user-data';
 import {AsksPage} from "../pages/asks/asks";
 import {AsksDataService} from "../providers/asks-data";
-import {ChecklistPage} from '../pages/checklists/checklist';
+import {ChecklistPage} from '../pages/checklists/checklist/checklist';
 import {ManageChecklistsPage} from "../pages/checklists/manage-checklists/manage-checklists";
 
 
@@ -48,7 +48,7 @@ import {ManageChecklistsPage} from "../pages/checklists/manage-checklists/manage
     SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,
-    ManageCheckListsPage,
+    ManageChecklistsPage,
     ChecklistPage,
     TabsPage,
     TutorialPage,
@@ -66,9 +66,11 @@ import {ManageChecklistsPage} from "../pages/checklists/manage-checklists/manage
         {component: ScheduleFilterPage, name: 'ScheduleFilter', segment: 'scheduleFilter'},
         {component: SpeakerListPage, name: 'SpeakerList', segment: 'speakerList'},
         {component: SpeakerDetailPage, name: 'SpeakerDetail', segment: 'speakerDetail/:name'},
+
         {component: ManageChecklistsPage, name: 'ManageChecklists', segment: 'manageChecklists'},
-        {component: ChecklistPage, name: 'SpeakerDetail', segment: 'manageChecklists/:name'},
-        {component: AsksPage, name: 'Checklists', segment: 'checklists'},
+        {component: ChecklistPage, name: 'Checklist', segment: 'manageChecklists/:name'},
+        {component: AsksPage, name: 'Asks', segment: 'asks'},
+
         {component: MapPage, name: 'Map', segment: 'map'},
         {component: AboutPage, name: 'About', segment: 'about'},
         {component: TutorialPage, name: 'Tutorial', segment: 'tutorial'},
@@ -94,6 +96,8 @@ import {ManageChecklistsPage} from "../pages/checklists/manage-checklists/manage
     SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,
+    ManageChecklistsPage,
+    ChecklistPage,
     TabsPage,
     TutorialPage,
     SupportPage,

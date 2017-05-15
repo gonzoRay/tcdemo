@@ -19,6 +19,7 @@ import { SupportPage } from '../pages/support/support';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import {AsksPage} from "../pages/asks/asks";
+import {ManageChecklistsPage} from "../pages/checklists/manage-checklists/manage-checklists";
 
 export interface PageInterface {
   title: string;
@@ -45,7 +46,7 @@ export class ConferenceApp {
   appPages: PageInterface[] = [
     { title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
     { title: 'Coordinators', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
-    { title: 'Checklists', name: 'TabsPage', component: TabsPage, tabComponent: AsksPage, index: 2, icon: 'list' },
+    { title: 'Checklists', name: 'TabsPage', component: TabsPage, tabComponent: ManageChecklistsPage, index: 2, icon: 'list' },
     { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 3, icon: 'map' },
     { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 4, icon: 'information-circle' }
   ];

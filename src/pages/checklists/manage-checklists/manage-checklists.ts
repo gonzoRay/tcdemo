@@ -1,10 +1,11 @@
 import {Component} from '@angular/core';
 import {NavController, AlertController, Platform} from 'ionic-angular';
-import {Data} from '../../providers/data';
-import {Keyboard} from '@ionic-native/keyboard';
+
 import {Storage} from '@ionic/storage';
 import {AsksDataService} from "../../../providers/asks-data";
 import {ChecklistModel} from "../../../shared/models/checklist-model";
+
+
 
 @Component({
   selector: 'page-manage-checklists',
@@ -18,23 +19,13 @@ export class ManageChecklistsPage {
               public dataService: AsksDataService,
               public alertCtrl: AlertController,
               public storage: Storage,
-              public platform: Platform,
-              public keyboard: Keyboard) {
+              public platform: Platform) {
 
   }
 
   ionViewDidLoad() {
 
     this.platform.ready().then(() => {
-
-      this.storage.get('introShown').then((result) => {
-        if (!result) {
-          this.storage.set('introShown', true);
-          this.nav.setRoot('Intro');
-        }
-
-      });
-
 
       this.dataService.getData().then((checklists) => {
 
@@ -149,7 +140,7 @@ export class ManageChecklistsPage {
   }
 
   save(): void {
-    this.keyboard.close();
+    //this.keyboard.close();
     this.dataService.save(this.checklists);
   }
 
